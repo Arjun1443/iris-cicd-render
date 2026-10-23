@@ -31,8 +31,8 @@ def test_predict_get(client):
     )
 
     assert response.status_code == 200
-    #assert response.get_json() == {"prediction": "setosa"}
-    assert response.get_json() == {"prediction": "virginica"}
+    assert response.get_json() == {"prediction": "setosa"}
+    
 
 
 def test_predict_post(client):
